@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="TextAppearance.App" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/text_medium</item>
@@ -21,7 +22,6 @@
     <style name="TextAppearance.App.Small.Bold" parent="TextAppearance.App.Small">
         <item name="android:textStyle">bold</item>
     </style>
-
 
 
 </resources>
