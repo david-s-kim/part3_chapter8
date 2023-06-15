@@ -26,6 +26,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name="com.example.part3_chapter8.presenter.ui.InputActivity"
+            android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>
