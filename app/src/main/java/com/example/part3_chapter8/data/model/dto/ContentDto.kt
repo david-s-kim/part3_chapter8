@@ -10,5 +10,6 @@ data class ContentDto(
     val createdDate: Date? = null,
     val likeCount: Int? = null,
     val commentCount: Int? = null,
-    val viewCount: Int? = null
+    val viewCount: Int? = null,
+    val viewApproach : String? = null
 )
