@@ -1,6 +1,7 @@
 package com.example.part3_chapter8.di
 
 import com.example.part3_chapter8.data.repository.ContentRepositoryImpl
+import com.example.part3_chapter8.data.source.local.dao.ContentDao
 import com.example.part3_chapter8.data.source.remote.api.ContentService
 import com.example.part3_chapter8.domain.repository.ContentRepository
 import dagger.Module
@@ -16,6 +17,7 @@ object RepositoryModule {
     @Provides
     @ViewModelScoped
     fun providesContentRepository(
-        contentService: ContentService
-    ) : ContentRepository = ContentRepositoryImpl(contentService)
+        contentService: ContentService,
+        contentDao: ContentDao
+    ): ContentRepository = ContentRepositoryImpl(contentService, contentDao)
 }
